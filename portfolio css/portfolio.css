@@ -253,6 +253,24 @@ span {
   transition: color 1s ease;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 2em;
+  right: 1.5em;
+  background: #007af3;
+  color: white;
+  padding: 0.5em 0.8em;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5em;
+  box-shadow: 0 4px 6px rgb(0, 0, 0);
+  z-index: 1000;
+}
+.back-to-top:hover {
+  background: #005fbd;
+  transform: scale(1.05);
+}
+
 @media (max-width: 765px) {
   .menu {
     position: fixed;
@@ -367,6 +385,21 @@ span {
   .contact-form h1 {
     text-align: left;
   }
+  .footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25em;
+    padding: 0;
+    margin-left: 0;
+  }
+  .social-icons {
+    padding-top: 1em;
+  }
 }
 @media (min-width: 1450px) {
   .hero {
@@ -378,6 +411,21 @@ span {
     align-items: center;
     align-content: center;
     margin-left: 12em;
+    padding-top: 1em;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50em;
+    padding: 0;
+    margin-left: 0;
+  }
+  .social-icons {
     padding-top: 1em;
   }
 }
@@ -408,7 +456,7 @@ span {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 90em;
+    gap: 70em;
     padding: 0;
     margin-left: 0;
   }

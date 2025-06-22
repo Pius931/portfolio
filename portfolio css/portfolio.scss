@@ -325,8 +325,28 @@ span {
 
 }
 
+.back-to-top {   // BACK TO TOP ARROW
+  position: fixed;
+  bottom: 2em;  //used when an element has position: fixed or absolute. he element will sit 20 pixels up from the bottom of the screen (or parent element, depending on position).
+  right: 1.5em;
+  background: #007af3;
+  color: white;
+  padding: 0.5em 0.8em;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 3); //This adds a subtle shadow effect behind the element, giving it a lifted or 3D feel — to make it pop out a bit.
+  z-index: 1000; //“Put this element in front of other elements with a lower z-index (or no z-index at all)
+  
+  &:hover {
+   background: #005fbd;
+   transform: scale(1.05);
+  }
+}
 
-@media (max-width: 765px)  { // stick the menu on mobile view only
+
+
+@media (max-width: 765px)  { // stick the menu on mobile view only from 756px down
     .menu {
     position: fixed;
     right: .7em;
@@ -496,8 +516,26 @@ span {
             text-align: left;
         }
 
-       
+    }
 
+
+     .footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 25em;
+        padding: 0;
+        margin-left: 0;
+
+    }
+
+    .social-icons {
+        padding-top: 1em;
     }
 
 
@@ -521,6 +559,25 @@ span {
         margin-left: 12em;
         padding-top: 1em;
 
+    }
+
+     .footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 50em;
+        padding: 0;
+        margin-left: 0;
+
+    }
+
+    .social-icons {
+        padding-top: 1em;
     }
 }
 
@@ -565,7 +622,7 @@ span {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 90em;
+        gap: 70em;
         padding: 0;
         margin-left: 0;
 
